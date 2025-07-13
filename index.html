@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .collapsible {
+          background-color: #2b7a78;
+          color: white;
+          cursor: pointer;
+          padding: 14px;
+          width: 100%;
+          border: none;
+          text-align: left;
+          font-size: 16px;
+          border-radius: 5px;
+        }
+    
+        .content {
+          padding: 0 18px;
+          display: none;
+          overflow: hidden;
+          background-color: #def2f1;
+          border-radius: 5px;
+          margin-top: 5px;
+        }
+      </style>
+</head>
+<title>Way Tour - Your Travel Companion</title>
+<body>
+<center>
+<div class="container-fluid fixed padlr-60 padlr-25 pad-b-m-14 affix-top" data-spy="affix" data-offset-top="170" style="background-color: rgb(130, 207, 198);"
+<div class="contact-info">
+    <h1>Way Tour</h1>
+    <p>123 Wanderlust Avenue, Travel City, World 45678</p>
+    <p>Phone: +91- 8910746408</p>
+    <div class="social">
+        <a href="https://www.instagram.com/YourPage" target="_blank">
+            <img src="facebook.jpg" alt="instagram" style="height: 30px;">
+          </a>
+          <a href="https://www.facebook.com/" target="_blank">
+            <img src="facebook 1.jpg" alt="Facebook" style="height: 30px;">
+          </a>
+          
+          <a href="https://yourtube.com/YourPage" target="_blank">
+            <img src="you.jpg" alt="youtube" style="height: 30px;">
+          </a>
+          
+    </div>
+
+    </nav><p style="text-align: left;"><img src="project web.jpg" alt="Company Logo" style="height: 150px;"></p> </div>
+    <div class="carousel-container" role="listbox"></div></center>
+        <div class="item action">
+             <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-sm bg-light">
+    <div class="container-fluid">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html"><b>HOME</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="gallery.html"><b>GALLERY</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html"><b>CONTACT US</b></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+         <marquee direction="left" scrollamount="10" class="blink"><font style="arial black"  color="red" size="30">Welcome to Our Website, Book Your Tour Packages Today!!! OFFERS AVAILABLE!!!</font></marquee>
+           <marquee direction="left" scrollamount="20"> <img src="photo 4.jpg" alt="one" class="img-responsive" width="1510" height= "350"><img src="home photo 3.jpg" width="1510" height="350"><img src="home photo.jpg" width="1510" height="350"> </marquee>
+    <div>
+        <section class="our-story">
+            <button onclick="document.getElementById('story-content').classList.toggle('show')"></button>
+            <div id="story-content" class="collapse">
+            </div>
+          </section>
+
+     <button class="collapsible">Our Story</button>
+     <div class="content">
+       <p> Founded by two adventure-loving friends, Explore Horizons started with a single van and a dream to show people the beauty of the world. Over the years, we've grown into a global travel company with a mission to connect travelers to cultures, communities, and unforgettable experiences.</p>
+     </div>
+
+     <script>
+     const coll = document.querySelector('.collapsible');
+     const content = document.querySelector('.content');
+
+     coll.addEventListener('click', function() {
+    content.style.display = content.style.display === 'block' ? 'none' : 'block';
+  });
+</script></div>
+</body>
+</html>

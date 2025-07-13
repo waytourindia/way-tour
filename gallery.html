@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery - Way Tour</title>
+  <link rel="stylesheet" href="gg.css">
+</head>
+<body>
+  <h1 class="styled-text">Our Travel Gallery</h1>
+
+  <!-- 2 Column Photo Section -->
+  <section class="gallery-grid">
+    <img src="hill1.jpg" alt="Photo of Hills" height="400px" width="200px">
+    <img src="hill2.jpg" alt="Photo of Hills" height="400px" width="200px">
+    <img src="monument1.jpg" alt="Photo of Monument" height="400px" width="200px">
+    <img src="monuments2.jpg" alt="Photo of Monument" height="400px" width="200px">
+    <img src="jungles1.jpg" alt="Photo of Jungle" height="400px" width="200px">
+    <img src="jungles2.jpg" alt="Photo of Jungle" height="400px" width="200px">
+    <img src="sea1.jpg" alt="Photo of sea beach" height="400px" width="200px">
+    <img src="sea2.jpg" alt="Photo of sea beach" height="400px" width="200px">
+  </section>
+
+  <!-- Carousel Section -->
+  <section class="carousel-container">
+    <div class="carousel-slide active"><img src="jungles3.jpg" alt="Slide 1"></div>
+    <div class="carousel-slide"><img src="sea3.jpg" alt="Slide 2"></div>
+    <div class="carousel-slide"><img src="monuments3.jpg" alt="Slide 3"></div>
+    <div class="carousel-slide"><img src="hill3.jpg" alt="Slide 4"></div>
+  </section>
+
+  <script>
+    let slideIndex = 0;
+    const slides = document.querySelectorAll('.carousel-slide');
+
+    function showNextSlide() {
+      slides[slideIndex].classList.remove('active');
+      slideIndex = (slideIndex + 1) % slides.length;
+      slides[slideIndex].classList.add('active');
+    }
+
+    setInterval(showNextSlide, 3000); // Change slide every 3 seconds
+  </script>
+<p style="text-align: left;"><a href="index.html">HOME</a></p>
+</body>
+</html>
